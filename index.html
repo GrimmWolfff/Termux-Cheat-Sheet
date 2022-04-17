@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Termux cheat sheet</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>TERMUX <sub>cheat sheet</sub></h1>
+    <div class="main">
+ <p class="subtitle"><p class="subtitle">Termux – Clear Screen</p>
+ <p class="explanation">For clear all screen content run the clear command.</p>
+ <p class="command">clear</p>
+ 
+ <p class="subtitle">Termux – Current Working Directory</p>
+ <p class="explanation">This command will tell you, your current working directory.</p>
+ <p class="command">pwd</p>
+ 
+ <p class="subtitle">Termux – Changing Directory</p>
+ <p class="explanation">cd command use for change our current working directory to another directory, type cd and your directory name. I’m moving in /home directory.</p>
+ <p class="command">cd /home</p>
+
+ <p class="subtitle">Termux – Move Back Directory</p>
+ <p class="explanation">If you want one directory to move back by using cd .. you can easily back one directory. and you wanna back two directories use the cd ../../ command.</p>
+ <p class="command">cd ..cd ../../</p>
+
+ <p class="subtitle">Termux – Create New File</p>
+ <p class="explanation">By using the touch command we can easily create a file</p>
+ <p class="command">touch &lt;file-name&gt; </p>
+
+ <p class="subtitle">Termux – Create New Directory</p>
+ <p class="explanation">Mkdir Stands for creating a new directory. Let’s Type the mkdir command and give a directory and using a space gape and hit the enter button.</p>
+ <p class="command">mkdir &lt;new-directoy-name&gt; </p>
+
+ <p class="subtitle">Termux – Delete Directory</p>
+ <p class="explanation">delete any directory by using the command, just type the rmdir &lt;delete directory-name&gt; and press enter and it will be deleted. delete the directory and their contents recursively rm -r &gt;directory-name&gt;</p>
+ <p class="command">rmdir &lt;directory-name&gt;
+rm -r &lt;directory-name&gt;</p>
+
+ <p class="subtitle">Termux – Delete File</p>
+ <p class="explanation">delete any file type the rm &lt;your-filename&gt; and press enter and it will be deleted within a second.</p>
+ <p class="command">rm &lt;file-name&gt;</p>
+
+ <p class="subtitle">Termux – Rename File and Directory & Move a File</p>
+ <p class="explanation">The <b>mv command</b> is a Linux command-line utility that moves files or directories from one place to another. rename filename type the command mv &lt;old-filename&gt; &lt;new-filename&gt;</p>
+ <p class="command">mv &lt;old-filename&gt; &lt;new-overwirte-filename&gt;
+mv -r &lt;current-file-location&gt; &lt;your-new-destination-directory&gt;</p>
+
+ <p class="subtitle">Termux – Copy File and Directory</p>
+ <p class="explanation">copy file source to destination. this is another Linux command-line utility for copy file and directory. if you want to copy a directory you must use cp -r copy directories and their contents recursively.</p>
+ <p class="command">cp &lt;filename&gt; &lt;new-filename&gt;
+cp -r &lt;directory-name&gt; &lt;new-directory-name&gt;</p>
+
+  <p class="subtitle">Termux – File Editor nano and VI</p>
+ <p class="explanation">Termux has many command-line editors but there have most useful editor vi and nano. if you already have a file run the vi &lt;filename&gt; enter the edit mode by pressing ( i ) after edit the file press the ESC button and type ( :wq ) write and quite. read more about vi editor.
+
+nano is another Termux editor type nano &lt;filename&gt; edit your file and save the file by using ( Ctrl + x ) and type y for yes and again hit enter and your file is saved.</p>
+ <p class="command">vi &lt;filename&gt;
+nano &lt;filename&gt;</p>
+
+  <p class="subtitle">Termux – Read File Content cat command</p>
+ <p class="explanation">Run the cat command with using extra argument &lt;your-read-file-name&gt; and everything is see in terminal inside the text file.</p>
+ <p class="command">cat &lt;filename&gt;</p>
+
+  <p class="subtitle">Termux – All running background Process Top command</p>
+ <p class="explanation">Know all running processes in Termux you can easily see all running processes by using the top command.</p>
+ <p class="command">top</p>
+
+  <p class="subtitle">Termux – Change Permission and Group</p>
+ <p class="explanation">you can easily change every file permission and change file ownership group and user. for adding execute permission to run the command. ( chmod +x &lt;file-name&gt; ) if you want to change file ownership run the command ( chown newuser:newgroup &lt;filename&gt;.</p>
+ <p class="command">chmod (permission-mode) &lt;filename&gt;
+chown (newuser:newgroup) &lt;filename&gt;</p>
+  
+  <p class="subtitle">Termux – Clone Source code from Github</p>
+  <p class="explanation">Download new project and cloning project from git hub run the command.</p>
+  <p class="command">git clone &lt;cloning url&gt;</p>
+
+  <p class="subtitle">Termux – Download File wget and curl</p>
+  <p class="explanation">If you want to download the file through the terminal. there are many download tools but we are mostly using these tools. wget and curl you can download every file from the internet by using those tools.</p>
+  <p class="command">wget &lt;download-file-url&gt;
+curl &lt;download-file-url&gt; -o &lt;output-filename&gt;</p>
+
+  <p class="subtitle">Termux – history All Previous run Command</p>
+  <p class="explanation">checking all previous run command.</p>
+  <p class="command">history</p>
+  </div>
+  </body>
+</html>
